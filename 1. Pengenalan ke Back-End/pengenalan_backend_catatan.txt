@@ -1,0 +1,64 @@
+A) Apa itu backend
+: Bagian dari aplikasi yang bertanggung jawan untuk menyediakan kebutuhan 
+yang tak terlihat oleh pengguna (tidak berinteraksi langsung dengan pengguna),
+seperti bagaimana data disimpan, diolah, serta ditransaksikan
+secara aman. Itu semua bertujuan untuk mendukung apliaksi Front-End bekerja 
+sesuai dengan fungsinya. 
+
+B) Server
+: Sebuah sistem yang dapat menyediakan sumber daya berupa data, layanan,
+atau program untuk disajikan ke komputer lain. 
+    B.1) Jenis-jenis Server
+    : B.1.1) File Server
+      : Melayani penyimpanan dan pendistribusian berkas
+
+      B.1.2) Application Server
+      : Melayani hosting sebuah program atau apliaksi
+
+      B.1.3) Application Server
+      : Melayani hosting sebuah program atau apliaksi
+
+      B.1.4) DNS Server
+      : Mengubah naam domain ke dalam bentuk IP Address
+
+      B.1.5) Web Server
+      : Melayani hosting sebuah program atau aplikasi yang
+      dapat diakses oleh client melalui internet atau intranet
+
+      B.1.6) Database Server
+      : Melayani penyimpanan dan pendistribusian terstruktur
+
+C) Web Service
+: Program yang dijalankan di web server agar kebutuhan bisnis terpenuhi.
+
+D) Komunikasi Client Server
+: HTTP/HTTPS merupakan salah satu protokol yang dapat digunakan untuk
+berinteraksi dengan web server. Protokol tersebut terkenal dengan pola 
+request-response, artinya untuk mendapatkan sesuatu(reponse) kita
+perlu melakukan permintaan terlebih dahulu (request).
+
+  D.1) Persyaratan request
+    D.1.1) Request Line
+    : Method/verb seperti GET (mengambil data), POST (menambahkan/mengirimkan data),
+    atau DELETE(menghapus data).
+
+    D.1.2) HEADER
+    : Memuat informasi yang dilampirkan terkait request seperti format dokumen
+    (contoh application/json, text/html), kunci akses, dsb.
+
+    D.1.3) Body (Opsional)
+    : Mengandung data yang dibutuhkan oleh server, bisa dalam bentuk teks,
+    JSON, dll. Body tidak wajib dilampirkan bila server tidak membutuhkan 
+    data apapun.
+
+  D.2) Lampiran response
+    D.2.1) Status Line
+    : HTTP versi yang digunakan. Status code berupa tiga digit angka yang menandakan
+    keberhasilan dari permintaan; reason phrase atau status text yang merupakan
+    pesan berdasarkan status code dalam bentuk teks sehingga lebih mudah dimengerti
+
+    D.2.2) Header
+    : Mengandung informasi yang dilampirkan terkait response seperti format dokumen.
+
+    D.2.3) Body (opsional)
+    : Memuat adta yang dikirimkan dari server. Data dapat berupa HTML, JSON, gambar, dsb
