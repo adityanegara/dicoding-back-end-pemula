@@ -1,0 +1,73 @@
+A) Node.js Global Object
+    A.1) Latar Belakang
+    : Pada Node JS terdapat objek "global" guna 
+    memberikan fungsionalitas lebih pada Javascript. 
+    Hal ini digunakan untuk mendukung pengembangan pada
+    environment-nya. 
+
+    A.2) Manfaat
+     1) Melihat berapa CPU yang digunakan pada komputer
+     2) Modularisasi berkas javascript
+     3) Menampilkan nilai pada console
+
+    A.3) True Global
+     A.3.1) global
+     : Global namespace. Member apa pun di dalam object ini dapat diakses
+     pada cakupan global.
+
+     A.3.2) Process
+     : Menyediakan interaksi dengan proses Node.js yang berjalan
+
+     A.3.3) console
+     : Menyediakan berbagai fungsionalitas STDIO
+
+     A.3.4) setTimout, clearTimeout, setInterval, clearInterval
+    
+    A.4) Pseudo-globals
+     A.4.1) module
+     : Digunakan untuk sistem modularisasi pada Node.js
+
+     A.4.2)  __filename
+     : Keyword untuk mendapatkan lokasi berkas javascript yang dieksekusi
+
+     A.4.3)  __Ddirname
+     : Keyword untuk mendapatkan root directory dari berkas Javascript yang 
+     dieksekusi
+
+     A.4.4) require
+     : Digunakan untuk mengimpor module Javascript
+
+B) Process Object
+: Memberikan informasi mengenai proses yang sedang berjalan.
+    
+    B.1) process.env
+    : Menyimpan nilai atau mendapatkan informasi mengenai
+    environment yang digunakan selama proses sedang 
+    berlangsung. 
+        B.1.1) process.env.PWD
+        : Informasi mengenai lokasi dimana proses dijalankan
+
+        B.1.2) process.env.USER
+        : Informasi nama user di komputer anda
+
+        B.1.3) Menyimpan nilai di process.env
+            B.1.3.1) Linux dan macOS
+            : NODE_ENV=production node app.js
+
+            B.1.3.2) Windows CMD
+            : SET NODE_ENV=production && node app.js
+    
+    B.2) process.memoryUsage()
+    : Mendapatkan informasi tentang penggunaan CPU ketika 
+    proses berjalan.
+
+    B.3) process.argv
+    : Menampung nilai baris perintah dalam bentuk array ketika
+    menjalankan proses
+        B.3.1) Contoh
+        : node app.js harry potter.
+        element 1: Alamat path berisikan node yang menjalankan 
+        prosesnya
+        element 2: Alamat path berkas javascript (app.js)
+        element 3: harry
+        element 4: potter
